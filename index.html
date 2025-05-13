@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine da Inovação no Agroconectado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-green-600 text-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo text-xl font-bold ml-4">
+            <a href="#" class="hover:text-green-200 transition duration-300">AgroConectado</a>
+        </div>
+        <nav class="mr-4">
+            <ul class="flex space-x-4">
+                <li><a href="#startups" class="hover:text-green-200 transition duration-300">Startups Agrotech</a></li>
+                <li><a href="#agricultura-precisao" class="hover:text-green-200 transition duration-300">Agricultura de Precisão</a></li>
+                <li><a href="#logistica" class="hover:text-green-200 transition duration-300">Logística</a></li>
+                <li><a href="#comunicacao-marketing" class="hover:text-green-200 transition duration-300">Comunicação</a></li>
+                <li><a href="#casos-sucesso" class="hover:text-green-200 transition duration-300">Casos de Sucesso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section id="startups" class="mb-12 rounded-lg bg-white p-6 shadow-md">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Startups Agrotech</h2>
+            <p class="text-gray-700 mb-4">
+                Destaque para empresas que desenvolvem soluções tecnológicas para o agronegócio e a conexão com o mercado urbano.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="startups-list">
+                </div>
+            <a href="#" class="mt-4 inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300">Ver todas as Startups</a>
+        </section>
+
+        <section id="agricultura-precisao" class="mb-12 rounded-lg bg-white p-6 shadow-md">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Agricultura de Precisão</h2>
+            <p class="text-gray-700 mb-4">
+                Informações sobre tecnologias que otimizam a produção no campo.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="agricultura-precisao-list">
+                 </div>
+        </section>
+
+        <section id="logistica" class="mb-12 rounded-lg bg-white p-6 shadow-md">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Logística e Distribuição Inteligente</h2>
+            <p class="text-gray-700 mb-4">
+                Soluções para facilitar o acesso dos produtos do campo aos centros urbanos.
+            </p>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="logistica-list">
+                 </div>
+        </section>
+
+        <section id="comunicacao-marketing" class="mb-12 rounded-lg bg-white p-6 shadow-md">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Comunicação e Marketing Digital para o Agro</h2>
+            <p class="text-gray-700 mb-4">
+                Ferramentas e estratégias para os produtores se conectarem com os consumidores.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="comunicacao-marketing-list">
+                 </div>
+        </section>
+
+        <section id="casos-sucesso" class="mb-12 rounded-lg bg-white p-6 shadow-md">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Casos de Sucesso</h2>
+            <p class="text-gray-700 mb-4">
+                Histórias de produtores e empresas que utilizam a tecnologia para fortalecer suas conexões.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="casos-sucesso-list">
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center rounded-md shadow-md">
+        <p>&copy; 2025 Vitrine da Inovação no Agroconectado</p>
+    </footer>
+
+    <script>
+       const startupsList = [
+            {
+                nome: "AgroTech Solutions",
+                descricao: "Plataforma de gestão agrícola",
+                logo: "https://via.placeholder.com/150",
+                link: "#",
+            },
+            {
+                nome: "FieldData Insights",
+                descricao: "Análise de dados para otimização da produção",
+                logo: "https://via.placeholder.com/150",
+                link: "#",
+            },
+             {
+                nome: "SmartFarm Systems",
+                descricao: "Irrigação inteligente e monitoramento",
+                logo: "https://via.placeholder.com/150",
+                link: "#",
+            },
+        ];
+
+        const agriculturaPrecisaoList = [
+            {
+                nome: "Drones para Mapeamento",
+                descricao: "Mapeamento aéreo para análise de safras",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+            {
+                nome: "Sensores de Solo",
+                descricao: "Monitoramento em tempo real da umidade e nutrientes",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+            {
+                nome: "Software de Gestão Agrícola",
+                descricao: "Plataformas para planejar e otimizar a produção",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+        ];
+
+        const logisticaList = [
+          {
+                nome: "Rastreamento de Alimentos",
+                descricao: "Tecnologia para rastrear a origem e o transporte de produtos.",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+            {
+                nome: "Plataformas de Distribuição",
+                descricao: "Conectando produtores com centros de distribuição e mercados.",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+            {
+                nome: "Embalagens Inteligentes",
+                descricao: "Soluções de embalagens que prolongam a vida útil dos produtos.",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+        ];
+
+        const comunicacaoMarketingList = [
+            {
+                nome: "Marketing de Conteúdo",
+                descricao: "Estratégias para criar conteúdo relevante para o público.",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+            {
+                nome: "Redes Sociais para o Agro",
+                descricao: "Dicas para produtores usarem as redes sociais.",
+                imagem: "https://via.placeholder.com/300x200",
+            },
+            {
+              nome: "Plataformas de E-commerce",
+              descricao: "Ferramentas para vender produtos diretamente aos consumidores.",
+              imagem: "https://via.placeholder.com/300x200"
+            }
+        ];
+
+        const casosSucessoList = [
+            {
+                titulo: "Fazenda Modelo Conectada",
+                descricao: "Como a tecnologia aumentou a produção de uma fazenda.",
+                imagem: "https://via.placeholder.com/400x200",
+            },
+            {
+                titulo: "Cooperativa Digital",
+                descricao: "Plataforma que conecta cooperativas a mercados urbanos.",
+                imagem: "https://via.placeholder.com/400x200",
+            },
+        ];
+
+        function criarCardStartup(startup) {
+            return `
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between">
+                    <div class="flex justify-center mb-4">
+                        <img src="${startup.logo}" alt="${startup.nome}" class="rounded-md h-24 w-24 object-contain">
+                    </div>
+                    <h3 class="text-lg font-semibold text-green-600 mb-2 text-center">${startup.nome}</h3>
+                    <p class="text-gray-600 text-sm mb-4 text-center">${startup.descricao}</p>
+                    <div class="text-center">
+                        <a href="${startup.link}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 inline-block">Ver Mais</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function criarCardTecnologia(tecnologia) {
+            return `
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="${tecnologia.imagem}" alt="${tecnologia.nome}" class="rounded-md w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2">${tecnologia.nome}</h3>
+                    <p class="text-gray-600 text-sm">${tecnologia.descricao}</p>
+                </div>
+            `;
+        }
+
+      function criarCardComunicacao(ferramenta) {
+            return `
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="${ferramenta.imagem}" alt="${ferramenta.nome}" class="rounded-md w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2">${ferramenta.nome}</h3>
+                    <p class="text-gray-600 text-sm">${ferramenta.descricao}</p>
+                </div>
+            `;
+        }
+
+        function criarCardCasoSucesso(caso) {
+            return `
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col md:flex-row items-center">
+                    <img src="${caso.imagem}" alt="${caso.titulo}" class="rounded-md w-full md:w-1/2 h-48 object-cover mb-4 md:mb-0 md:mr-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-green-600 mb-2">${caso.titulo}</h3>
+                        <p class="text-gray-600 text-sm">${caso.descricao}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        const startupsListElement = document.getElementById("startups-list");
+        startupsList.forEach((startup) => {
+            startupsListElement.innerHTML += criarCardStartup(startup);
+        });
+
+        const agriculturaPrecisaoListElement = document.getElementById("agricultura-precisao-list");
+        agriculturaPrecisaoList.forEach((tecnologia) => {
+            agriculturaPrecisaoListElement.innerHTML += criarCardTecnologia(tecnologia);
+        });
+
+      const logisticaListElement = document.getElementById("logistica-list");
+      logisticaList.forEach((solucao) => {
+          logisticaListElement.innerHTML += criarCardTecnologia(solucao);
+      });
+
+      const comunicacaoMarketingListElement = document.getElementById("comunicacao-marketing-list");
+      comunicacaoMarketingList.forEach((ferramenta) => {
+          comunicacaoMarketingListElement.innerHTML += criarCardComunicacao(ferramenta);
+      });
+
+        const casosSucessoListElement = document.getElementById("casos-sucesso-list");
+        casosSucessoList.forEach((caso) => {
+            casosSucessoListElement.innerHTML += criarCardCasoSucesso(caso);
+        });
+    </script>
+</body>
+</html>
